@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <nav role="navigation" class="menusecond">
+            <label for="menusecond">menusecond <i class="fa fa-bars"></i></label>
+            <input type="checkbox" id="menusecond" />
+            <ul>
+                <li class="menusecond-hasdropdown">
+                    <a href="#"
+                        >About
+                        <label title="toggle menusecond" for="about">
+                            <i class="fa fa-caret-down"></i>
+                        </label>
+                    </a>
+                    <input type="checkbox" id="about" />
+                    <ul class="menusecond-dropdown">
+                        <li><a href="">History</a></li>
+                        <li><a href="">Mission</a></li>
+                        <li class="menusecond-hasdropdown menusecond-hasflyout">
+                            <a href=""
+                                >Services
+                                <label title="toggle menusecond" for="services">
+                                    <i
+                                        class="fa fa-caret-down menusecond-downicon"
+                                    ></i>
+                                    <i
+                                        class="fa fa-caret-right menusecond-righticon"
+                                    ></i>
+                                </label>
+                            </a>
+                            <input type="checkbox" id="services" />
+                            <ul class="menusecond-dropdown">
+                                <li><a href="">Service 1</a></li>
+                                <li><a href="">Service 2</a></li>
+                                <li><a href="">Service 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>

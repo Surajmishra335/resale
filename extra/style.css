@@ -1,0 +1,156 @@
+.menusecond {
+    background: #03a9f4;
+  }
+  
+  .menusecond ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .menusecond,
+  .menusecond a {
+    color: #e2e2e2;
+    text-decoration: none;
+  }
+  
+  .menusecond a {
+    display: block;
+    white-space: nowrap;
+  }
+  
+  .menusecond-dropdown,
+  .menusecond input[type=checkbox] {
+    display: none;
+  }
+  
+  .menusecond label:hover {
+    cursor: pointer;
+  }
+  
+  /* narrow styles */
+  @media screen and (max-width: 1024px) {
+    .menusecond > ul,
+  .menusecond-righticon {
+      display: none;
+    }
+  
+    input[type=checkbox]:checked + ul {
+      display: block;
+      -webkit-animation: grow 0.5s ease-in-out;
+              animation: grow 0.5s ease-in-out;
+    }
+  }
+  /* large styles */
+  @media screen and (min-width: 1025px) {
+    .menusecond > label,
+  input[type=checkbox] {
+      display: none;
+    }
+  
+    .menusecond a {
+      padding: 15px 20px;
+    }
+  
+    .menusecond > ul > li {
+      display: inline-block;
+    }
+  
+    .menusecond-hasdropdown {
+      position: relative;
+    }
+    .menusecond-hasdropdown:hover > ul {
+      display: block;
+      -webkit-animation: grow 0.5s ease-in-out;
+              animation: grow 0.5s ease-in-out;
+    }
+  
+    .menusecond-hasdropdown > ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #035e8d;
+    }
+  
+    .menusecond-hasflyout > ul {
+      left: 100%;
+      top: 0;
+    }
+  
+    .menusecond-hasflyout .menusecond-downicon {
+      display: none;
+    }
+  }
+  /* look and feel only, not needed for core menusecond*/
+  @-webkit-keyframes grow {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    50% {
+      display: block;
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes grow {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    50% {
+      display: block;
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  html {
+    font-size: 100%;
+  }
+  
+  body {
+    font-family: "Roboto" sans-serif;
+    line-height: 1.5;
+  }
+  
+  .menusecond-dropdown a {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* narrow  */
+  @media screen and (max-width: 1024px) {
+    .menusecond > label {
+      background: black;
+      display: block;
+      padding: 15px 20px;
+      text-align: right;
+    }
+  
+    .menusecond a {
+      padding: 15px 20px;
+    }
+  
+    .menusecond > ul i {
+      float: right;
+      padding: 5px 10px;
+      background: #012c42;
+    }
+  
+    .menusecond-dropdown a {
+      background: #024d74;
+    }
+  
+    .menusecond-hasflyout > ul a {
+      background: #023d5b;
+    }
+  }
+  @media screen and (min-width: 1025px) {
+    .menusecond {
+      margin: 0 auto;
+    }
+  }
