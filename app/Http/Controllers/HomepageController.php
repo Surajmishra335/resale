@@ -6,10 +6,11 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\Advertisement;
 use App\Models\Subcategory;
+use Stevebauman\Location\Facades\Location;
 
 class HomepageController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         //for category car
         $category = Category::CategoryCar();
@@ -23,6 +24,8 @@ class HomepageController extends Controller
 
         //get all categories
         $categories = Category::get();
+
+        
 
         //return to home with all variable
         return view('home', compact(
