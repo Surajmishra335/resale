@@ -113,14 +113,16 @@
             </p>
           </div>
           <div class="bottom-social-icons social-icon float-right">
-            <a class="facebook" target="_blank" href="https://web.facebook.com/GrayGrids"><i
-                class="fab fa-facebook-f"></i></a>
-            <a class="twitter" target="_blank" href="https://twitter.com/GrayGrids"><i class="fab fa-twitter"></i></a>
-            <a class="dribble" target="_blank" href="https://dribbble.com/"><i class="fab fa-dribbble"></i></a>
-            <a class="flickr" target="_blank" href="https://www.flickr.com/"><i class="fab fa-flickr"></i></a>
-            <a class="youtube" target="_blank" href="https://youtube.com"><i class="fab fa-youtube"></i></a>
-            <a class="google-plus" target="_blank" href="https://plus.google.com"><i class="fab fa-google-plus"></i></a>
-            <a class="linkedin" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+
+            <a class="facebook" target="_blank" href="{{$sitesetting->fb ?? '#'}}"><i class="fab fa-facebook-f"></i></a>
+            <a class="twitter" target="_blank" href="{{$sitesetting->twitter ?? '#'}}"><i
+                class="fab fa-twitter"></i></a>
+            <a class="dribble" target="_blank" href="{{$sitesetting->instagram ?? '#'}}"><i
+                class="fab fa-instagram"></i></a>
+            <a class="youtube" target="_blank" href="{{$sitesetting->youtube ?? '#'}}"><i
+                class="fab fa-youtube"></i></a>
+            <a class="linkedin" target="_blank" href="{{$sitesetting->linkedin ?? '#'}}"><i
+                class="fab fa-linkedin"></i></a>
           </div>
         </div>
       </div>
@@ -214,16 +216,16 @@
     margin-left: 10px;
   }
 
-  .pagination .active{
+  .pagination .active {
     background-color: #03A9F4;
     border-radius: 30px;
     color: #fff;
-    
+
   }
-  .pagination .active .page-link{
+
+  .pagination .active .page-link {
     color: #fff;
     border: 1px solid #03A9F4;
 
   }
- 
 </style>

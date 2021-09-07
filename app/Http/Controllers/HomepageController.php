@@ -42,9 +42,9 @@ class HomepageController extends Controller
     public function search(Request $request)
     {
 
-        $advertisements =  Advertisement::where('category_id', $request->categoryId)->where('name', 'like', '%' .$request->search . '%')->paginate(20);
-        $subcategories = Subcategory::where('category_id', $request->categoryId)->get();
-        $category = Category::find($request->categoryId);
+        $advertisements =  Advertisement::where('category_id', $request->category_id)->where('subcategory_id', $request->subcategory_id)->where('name', 'like', '%' .$request->search . '%')->paginate(20);
+        $subcategories = Subcategory::where('category_id', $request->category_id)->get();
+        $category = Category::find($request->category_id);
         return view('product.search' , compact('advertisements', 'subcategories', 'category'));
     }
 }

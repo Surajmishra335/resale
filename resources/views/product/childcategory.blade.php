@@ -3,51 +3,7 @@
 <div id="search-row-wrapper">
     <div class="container">
         <div class="search-inner">
-            <div class="search-bar row">
-                <fieldset>
-                    <form class="search-form">
-                        <div class="form-group">
-                            <i class="lni-bullhorn"></i>
-                            <input type="text" name="customword" class="form-control"
-                                placeholder="What are you looking for" />
-                        </div>
-                        <div class="form-group">
-                            <div class="tg-select">
-                                <select>
-                                    <option value="none">All Locations</option>
-                                    <option value="none">Community</option>
-                                    <option value="none">Items For Sale</option>
-                                    <option value="none">Jobs</option>
-                                    <option value="none">Personals</option>
-                                    <option value="none">Real Estate</option>
-                                    <option value="none">Services</option>
-                                    <option value="none">Vehicles</option>
-                                </select>
-                                <i class="fas fa-angle-down"></i>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="tg-select">
-                                <select>
-                                    <option value="none">All Locations</option>
-                                    <option value="none">New York</option>
-                                    <option value="none">California</option>
-                                    <option value="none">Training</option>
-                                    <option value="none">Washington</option>
-                                    <option value="none">Birmingham</option>
-                                    <option value="none">Chicago</option>
-                                    <option value="none">Phoenix</option>
-                                    <i class="lnr-chevron-down"></i>
-                                </select>
-                                <i class="fas fa-angle-down"></i>
-                            </div>
-                        </div>
-                        <button class="btn btn-common" type="button">
-                            <i class="lni-search"></i> Search Now
-                        </button>
-                    </form>
-                </fieldset>
-            </div>
+            @include('layouts.inc.search')
         </div>
     </div>
 </div>

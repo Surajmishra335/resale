@@ -17,6 +17,7 @@ Vue.component('message', require('./components/Message.vue').default);
 Vue.component('conversation', require('./components/Conversation.vue').default);
 Vue.component('phone', require('./components/ShowPhoneNumber.vue').default);
 Vue.component('save-ad', require('./components/SaveAd.vue').default);
+Vue.component('search', require('./components/Search.vue').default);
 
 
 

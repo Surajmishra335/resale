@@ -112,9 +112,8 @@
                 </li>
                 @endif
 
-                <li>
-                  <a class="dropdown-item" href="account-close.html"><i class="lnr lnr-cross"></i>Account close</a>
-                </li>
+                
+                @if (Auth::check())
                 <li>
                   <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();"><i class="lnr lnr-cross"></i>Logout</a>
@@ -122,6 +121,7 @@
                     @csrf
                   </form>
                 </li>
+                @endif
               </ul>
             </li>
             <li class="postadd">

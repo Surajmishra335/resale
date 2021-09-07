@@ -4,7 +4,7 @@
   <div class="overlay">
     <div class="container">
       <div class="main-text">
-        <h1 class="intro-title">Welcome To <span>Classix</span></h1>
+        <h1 class="intro-title">Welcome To <span>Resale</span></h1>
         <p class="sub-title">
           Buy and sell everything from used cars to mobile phones and
           computers, or search for property, jobs and more
@@ -399,62 +399,5 @@
   </section>
 </div>
 
-<section id="counter">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 col-md-6 col-xs-12">
-        <div class="counting wow fadeInDownQuick" data-wow-delay="0.5s">
-          <div class="icon">
-            <span>
-              <i class="lnr lnr-tag"></i>
-            </span>
-          </div>
-          <div class="desc">
-            <h3 class="counter">12090</h3>
-            <p>Regular Ads</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-xs-12">
-        <div class="counting wow fadeInDownQuick" data-wow-delay="1s">
-          <div class="icon">
-            <span>
-              <i class="lnr lnr-map"></i>
-            </span>
-          </div>
-          <div class="desc">
-            <h3 class="counter">350</h3>
-            <p>Locations</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-xs-12">
-        <div class="counting wow fadeInDownQuick" data-wow-delay="1.5s">
-          <div class="icon">
-            <span>
-              <i class="lnr lnr-users"></i>
-            </span>
-          </div>
-          <div class="desc">
-            <h3 class="counter">23453</h3>
-            <p>Reguler Members</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-xs-12">
-        <div class="counting wow fadeInDownQuick" data-wow-delay="2s">
-          <div class="icon">
-            <span>
-              <i class="lnr lnr-license"></i>
-            </span>
-          </div>
-          <div class="desc">
-            <h3 class="counter">150</h3>
-            <p>Premium Ads</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 @endsection

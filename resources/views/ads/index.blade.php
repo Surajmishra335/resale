@@ -67,12 +67,14 @@
                                     </td>
                                     <td class="action-td">
                                         <p>
-                                            <a class="btn btn-primary btn-xs" href="{{route('product.view', [$ad->id, $ad->slug])}}">
+                                            <a class="btn btn-primary btn-xs"
+                                                href="{{route('product.view', [$ad->id, $ad->slug])}}">
                                                 <i class="fas fa-eye"></i> View
                                             </a>
                                         </p>
                                         <p>
-                                            <a class="btn btn-primary btn-xs" href="{{route('ad.edit', $ad->id)}}" target="_blank">
+                                            <a class="btn btn-primary btn-xs" href="{{route('ad.edit', $ad->id)}}"
+                                                target="_blank">
                                                 <i class="fas fa-pencil-alt"></i> Edit
                                             </a>
                                         </p>
@@ -116,11 +118,20 @@
                                 <p>You dont have any ads !</p>
                                 @endforelse
                             </tbody>
+
                         </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="pagination-bar">
+                            {{$ads->links("pagination::bootstrap-4")}}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 

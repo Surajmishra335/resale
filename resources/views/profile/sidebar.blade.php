@@ -36,9 +36,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="account-favourite-ads.html">
-                        <i class="fas fa-heart"></i>
-                        <span>Favourite Ads</span>
+                    <a href="{{route('messages')}}" class="{{request()->is('messages') ? 'active': ''}}">
+                        <i class="fas fa-envelope"></i>
+                        <span>Messages</span>
                     </a>
                 </li>
                 <li>
@@ -47,24 +47,14 @@
                         <span>Saved Ads </span>
                     </a>
                 </li>
-                <li>
-                    <a href="account-archived-ads.html">
-                        <i class="fas fa-folder"></i>
-                        <span>Archived Ads</span>
-                    </a>
-                </li>
+                
                 <li>
                     <a href="{{route('ads.pending')}}" class="{{request()->is('ads/pending') ? 'active': ''}}">
                         <i class="fas fa-hourglass"></i>
                         <span>Pending Approval</span>
                     </a>
                 </li>
-                <li>
-                    <a href="account-close.html">
-                        <i class="fas fa-times"></i>
-                        <span>Close Account</span>
-                    </a>
-                </li>
+               
             </ul>
         </nav>
     </div>

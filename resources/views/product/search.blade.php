@@ -1,5 +1,12 @@
 @extends('layouts.app')
 @section('content')
+<div id="search-row-wrapper">
+    <div class="container">
+        <div class="search-inner">
+            @include('layouts.inc.search')
+        </div>
+    </div>
+</div>
 <div class="main-container">
     <div class="container">
         <div class="row">
