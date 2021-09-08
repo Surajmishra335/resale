@@ -32,7 +32,7 @@
               <a href="{{route('category.show', [$category->slug])}}">
                 {{-- <i class="fas fa-car color-1"></i> --}}
                 <img src="{{Storage::url($category->image)}}" alt=""
-                  style="height: 50px; width: 50px; border-radius: 50%">
+                  style="height: 50px; width: 50px;">
               </a>
             </div>
             <div class="category-header">
